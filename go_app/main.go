@@ -15,6 +15,7 @@ func main() {
 	var pay float64
 	var governmentPay float64
 	var salary float64
+	var roundedPay float64
 
 	fmt.Println("Enter Hours:")
 	fmt.Scan(&hours)
@@ -23,7 +24,7 @@ func main() {
 
 	pay = (hours * salary) * (1 - rate)
 	governmentPay = (hours * salary) * rate
-	pay = fmt.Sprintf("%.2f", pay)
+	roundedPay = fmt.Sprintf("%.2f", pay)
 
 	fmt.Println("Pay:", pay)
 	fmt.Println("Government Pay:", governmentPay)
