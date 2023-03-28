@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	const rate float64 = 0.18
+	const rate = 0.18 float64
 	var hours float64
 	var pay float64
 	var governmentPay float64
@@ -21,8 +21,8 @@ func main() {
 	fmt.Println("Enter Salary:")
 	fmt.Scan(&salary)
 
-	pay = (hours * salary) * (1 - 0.18)
-	governmentPay = (hours * salary) * 0.18
+	pay = (hours * salary) * (1 - rate)
+	governmentPay = (hours * salary) * rate
 	pay = fmt.Sprintf("%.2f", pay)
 
 	fmt.Println("Pay:", pay)
