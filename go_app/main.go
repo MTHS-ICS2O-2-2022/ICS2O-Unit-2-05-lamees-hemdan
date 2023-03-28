@@ -23,11 +23,11 @@ func main() {
 
 	pay = (hours * salary) * (1 - rate)
 	governmentPay = (hours * salary) * rate
-	roundedPay:= fmt.Sprintf("%.2f", pay)
-	governmentPayRounded:= fmt.Sprintf("%.2f", governmentPay)
+	roundedPay := fmt.Sprintf("%.2f", pay)
+	governmentPayRounded := fmt.Sprintf("%.2f", governmentPay)
 
-	fmt.Println("Pay:", roundedPay)
-	fmt.Println("Government Pay:", governmentPayRounded)
+	fmt.Println("Pay: $", roundedPay)
+	fmt.Println("Government Pay: $", governmentPayRounded)
 
 	fmt.Println("\nDone.")
 }
