@@ -23,6 +23,7 @@ func main() {
 
 	pay = (hours * salary) * (1 - 0.18)
 	governmentPay = (hours * salary) * 0.18
+	pay = fmt.Sprintf("%.2f", pay)
 
 	fmt.Println("Pay:", pay)
 	fmt.Println("Government Pay:", governmentPay)

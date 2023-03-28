@@ -12,10 +12,11 @@
     // input
     const hours = parseFloat(document.getElementById('hours').value)
     const salary = parseFloat(document.getElementById('salary').value)
+    const TAX_RATE = 0.18
 
     // process
-    const pay = (hours * salary) * (1 - 0.18)
-    const governmentPay = (hours * salary) * 0.18
+    const pay = (hours * salary) * (1 - TAX_RATE)
+    const governmentPay = (hours * salary) * TAX_RATE
     
     // output
     document.getElementById('pay').innerHTML = `Your pay will be: $ ${pay.toFixed(2)}`
